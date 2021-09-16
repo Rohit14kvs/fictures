@@ -99,3 +99,68 @@ nav .nav-links li {
     border-top-left-radius: 0.2rem;
     border-bottom-left-radius: 0.2rem;
 }
+
+.gallery-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1E6F5C;
+    padding-top: 0.7rem;
+    margin: 0rem 0.5rem;
+}
+
+.gallery-info a {
+    color: #fff;
+    background: #1E6F5C;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.2rem;
+}
+
+.gallery-info .creator{
+    background: #fff;
+    color: #1E6F5C;
+    padding: 0;
+    border-radius: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 2rem 0rem;
+    width: 80%;
+    margin: auto;
+    row-gap: 5rem;
+    column-gap: 3rem;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+.nav-btn button {
+    border: 2px solid #1E6F5C;
+    background: #fff;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 0.5rem 0.7rem;
+    color: #1E6F5C;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-btn button:hover {
+    background: #1E6F5C;
+    color: #fff;
+}
