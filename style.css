@@ -75,6 +75,11 @@ nav .nav-links li {
     align-items: center;
 }
 
+.search-bar button {
+    border: none;
+    cursor: pointer;
+}
+
 .fas {
     background: #1E6F5C;
     font-size: 1rem;
