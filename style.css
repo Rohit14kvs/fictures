@@ -35,6 +35,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    flex-wrap: wrap;
 }
 
 nav #logo {
@@ -52,6 +53,11 @@ nav .nav-links {
     list-style: none;
     align-items: center;
     font-size: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.nav-links .nav-one {
+    display: flex;
 }
 
 nav .nav-links li {
@@ -199,4 +205,46 @@ nav .nav-links li:hover {
 .nav-btn button:hover {
     background: var(--main);
     color: var(--alt);
+}
+
+@media screen and (max-width: 720px){
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-links {
+        margin-bottom: 0.5rem;
+    }
+
+    nav #logo {
+        margin: 0.5rem 0 1rem 0;
+    }
+}
+
+@media screen and (max-width: 484px) {
+    .nav-links {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .nav-links .coffee {
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-links .nav-one {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .nav-links .nav-one li {
+        margin: 0;
+        padding: 0.5rem 0;
+    }
+    
 }
