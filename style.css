@@ -6,11 +6,14 @@
 }
 
 :root {
+    --main: #1E6F5C;
+    --alt: #fff;
+    /* --fade: rgb(134, 134, 134); */
 }
 
 a {
     text-decoration: none;
-    color: #fff; 
+    color: var(--alt); 
 }
 
 body {
@@ -23,7 +26,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1E6F5C;
+  background: var(--main);
 }
 
 nav {
@@ -37,6 +40,11 @@ nav {
 nav #logo {
     font-size: 2rem;
     font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav #logo:hover {
+    transform: scale(1.05);
 }
 
 nav .nav-links {
@@ -48,6 +56,19 @@ nav .nav-links {
 
 nav .nav-links li {
     margin-right: 4rem;
+    transition: all 0.2s ease;
+}
+
+nav .nav-links li:hover {
+    filter: brightness(75%);
+}
+
+.coffee {
+    transition: all 0.2s ease;
+}
+
+.coffee:hover {
+    transform: scale(1.05);
 }
 
 .search {
@@ -65,7 +86,7 @@ nav .nav-links li {
 
 .search-form label {
     font-size: 1.7rem;
-    color: #1E6F5C;
+    color: var(--main);
     margin-bottom: 1rem;
 
 }
@@ -84,10 +105,15 @@ nav .nav-links li {
     background: #1E6F5C;
     font-size: 1rem;
     padding: 0.8rem;
-    color: #fff;
+    color: var(--alt);
     border-bottom-right-radius: 0.2rem;
     border-top-right-radius: 0.2rem;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.fas:hover {
+    filter: brightness(80%);
 }
 
 .search-form input {
@@ -95,7 +121,7 @@ nav .nav-links li {
     padding: 0.5rem;
     width: 100%;
     border: none;
-    border: 2px solid #1E6F5C;
+    border: 2px solid var(--main);
     border-top-left-radius: 0.2rem;
     border-bottom-left-radius: 0.2rem;
 }
@@ -104,23 +130,33 @@ nav .nav-links li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #1E6F5C;
+    color: var(--main);
     padding-top: 0.7rem;
     margin: 0rem 0.5rem;
 }
 
 .gallery-info a {
-    color: #fff;
-    background: #1E6F5C;
+    color: var(--alt);
+    background: var(--main);
     padding: 0.4rem 0.6rem;
     border-radius: 0.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.gallery-info a:hover {
+    filter: brightness(80%);
 }
 
 .gallery-info .creator{
-    background: #fff;
-    color: #1E6F5C;
+    background: var(--alt);
+    color: var(--main);
     padding: 0;
     border-radius: 0;
+}
+
+.gallery-info .creator:hover {
+    filter: brightness(100%);
+    text-decoration: underline;
 }
 
 .gallery {
@@ -148,19 +184,19 @@ nav .nav-links li {
 }
 
 .nav-btn button {
-    border: 2px solid #1E6F5C;
-    background: #fff;
+    border: 2px solid var(--main);
+    background: var(--alt);
     font-family: 'Ubuntu Mono', monospace;
     font-weight: bold;
     font-size: 1.3rem;
     padding: 0.5rem 0.7rem;
-    color: #1E6F5C;
+    color: var(--main);
     border-radius: 0.3rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
 .nav-btn button:hover {
-    background: #1E6F5C;
-    color: #fff;
+    background: var(--main);
+    color: var(--alt);
 }
