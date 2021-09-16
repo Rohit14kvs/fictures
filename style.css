@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+}
+
+a {
+    text-decoration: none;
+    color: #fff; 
+}
+
+body {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+header {
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1E6F5C;
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+nav #logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+nav .nav-links li {
+    margin-right: 4rem;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-form label {
+    font-size: 1.7rem;
+    color: #1E6F5C;
+    margin-bottom: 1rem;
+
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.fas {
+    background: #1E6F5C;
+    font-size: 1rem;
+    padding: 0.8rem;
+    color: #fff;
+    border-bottom-right-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.search-form input {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    border: 2px solid #1E6F5C;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+}
